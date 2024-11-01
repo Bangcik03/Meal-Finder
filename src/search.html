@@ -1,0 +1,58 @@
+<!-- search.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meal Finder - Search</title>
+  <link rel="stylesheet" href="search.css" />
+</head>
+
+<body>
+
+  <!-- Header with Navbar and Back Button -->
+  <header>
+    <h1>Find Your Favorite Meal</h1>
+    <nav class="navbar">
+      <a href="homepage.html">Home</a>
+      <a href="search.html">Search</a>
+      <a href="planner.html">Planner</a>
+      <a href="grocery-list.html">Grocery List</a>
+    </nav>
+  </header>
+
+  <!-- Search and Filter Section -->
+  <section class="search-section">
+    <input type="text" id="searchInput" placeholder="Type a meal name, e.g., 'cake'" />
+    <button onclick="searchMeal()">Search</button>
+
+    <!-- To display meal by category -->
+    <div class="filters">
+      <label for="categoryFilter">Category:</label>
+      <select id="categoryFilter" onchange="filterMeals()">
+        <option value="">All Categories</option>
+      </select>
+
+      <!-- To display meal by ingredient -->
+      <label for="ingredientFilter">Ingredient:</label>
+      <select id="ingredientFilter" onchange="filterMeals()">
+        <option value="">All Ingredients</option>
+      </select>
+    </div>
+  </section>
+
+  <!-- Search Results Grid -->
+  <section id="searchResults" class="meal-grid"></section>
+  <div id="errorMessage" class="error-message" style="display: none; color: red; text-align: center; margin-top: 20px;">
+    No results found. Please try another search term.
+  </div>
+  
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Meal Finder. All Rights Reserved.</p>
+  </footer>
+
+  <script src="search.js"></script>
+</body>
+</html>

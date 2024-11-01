@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grocery List</title>
+  <link rel="stylesheet" href="grocery-list.css">
+</head>
+<body>
+  <header>
+    <h1>My Grocery List</h1>
+    <nav class="navbar">
+      <a href="homepage.html">Home</a>
+      <a href="search.html">Search</a>
+      <a href="planner.html">Planner</a>
+      <a href="grocery-list.html">Grocery List</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="groceryList" class="grocery-sections">
+      <!-- Dynamic sections for meals and ingredients will populate here -->
+    </section>
+
+    <div class="add-ingredient">
+      <h2>Add New Ingredients</h2>
+      <div class="input-group">
+        <label for="mealSelect">Select Meal</label>
+        <select id="mealSelect">
+          <!-- Meal options will be populated here -->
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label for="ingredientDropdown">Choose from Common Ingredients</label>
+        <select id="ingredientDropdown">
+          <!-- Ingredient options will be populated here -->
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label for="newIngredient">Or Add Custom Ingredient</label>
+        <input type="text" id="newIngredient" placeholder="Enter ingredient name">
+      </div>
+
+      <button onclick="addCustomIngredient()">Add to List</button>
+    </div>
+  </main>
+
+  <script src="grocery-list.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!-- meal-details.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meal Details</title>
+  <link rel="stylesheet" href="meal-details.css" />
+</head>
+<body>
+  <header>
+    <!-- Header Meal Detail -->
+    <h1>Your Meal Details</h1>
+    <nav class="navbar">
+      <a href="homepage.html">Home</a>
+      <a href="search.html">Search</a>
+      <a href="planner.html">Planner</a>
+      <a href="grocery-list.html">Grocery List</a>
+    </nav>
+  </header>
+
+  
+  <div id="mealDetails" class="meal-details-container"></div>
+  <div class="planner-actions" style="margin-left: 30%;">
+    <!-- Button to save meal to planner -->
+    <button id="saveToPlanner" class="planner-link" >Add to Planner</button>
+    
+    <!-- Button to view planner -->
+    <a href="planner.html" class="planner-link">View Planner</a><br>
+    <!-- Button to view Grocery List -->
+    <button class="save-button" id="addToGroceryListButton" onclick="addMealToGroceryList()">Add to Grocery List</button>
+    <a class="save-button" href="grocery-list.html">View Grocery List</a>
+  </div>
+
+  <script src="meal-details.js"></script>
+</body>
+</html>
